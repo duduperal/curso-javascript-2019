@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tratamento de dados</title>
+    <style>
+        body{
+            background-color: #E093A0;
+        }
+
+        h1{
+            color: #369147;
+            font-size: 2.5em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+
+        p{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: #FFF2F4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Eu queria um cachorro!</p>   
+    <script>
+        var n1 = Number(prompt("Digite um número: ")) // Vai pedir para digitar um número e vai armazenar esse dado na variável (n1) convertendo a (string) do prompt para um número com a propriedade (Number)
+        var n2 = Number(prompt("Digite outro número: ")) // Vai fazer a mesma coisa de cima só que armazenar o dado na var (n2)
+        var s = n1 + n2 // Irá criar uma variável (s) e vai fazer essa var(s) receber a soma de (n1) e (n2)
+        alert(`A soma entre ${n1} e ${n2} será: ${s}!`) // Vai mostrar o resultado na tela
+    </script>
+</body>
+</html>
