@@ -17,14 +17,48 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="clique">Clique em mim</div>
+    <div class="msg">Clique em mim</div>
     <script>
+
+        //POR TAG
+
         var corpo = document.body
         var p1 = document.getElementsByTagName('p')[1]
         document.write(p1.innerHTML)
         corpo.style.textAlign = 'left'
-        var botão = document.getElementById('clique')
-        botão.style.backgroundColor = 'white'
+
+        /*
+        POR ID
+
+        var d = document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+        d.innerText = 'Estou aguardando...'
+        document.getElementById('msg').innerText = 'olá'
+        */
+
+        /*
+        POR NAME
+
+        var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'
+        */
+
+        /*
+        POR CLASS
+
+        var d = document.getElementsByClassName('msg')[0]
+        d.innerText = 'Olá'
+        */
+
+        /*
+        POR QUERY SELECTOR 
+        (QUASE A MESMA COISA QUE OS SELETORES DAS CSS)
+
+        var d = document.querySelector('div.msg')
+                                      ('div#msg')  
+                                      ('div')
+        d.style.background = 'blue'
+        */
     </script>
 </body>
 </html>

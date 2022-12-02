@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM pratica</title>
+    <style>
+        body{
+            width: 70vw;
+            margin: auto;
+            background-color: blanchedalmond;
+        }
+
+        h1{
+            font: bold 2em courier;
+        }
+        p{
+            font: normal 1em arial;
+            line-height: 1.5em;
+        }
+
+        div{
+            text-align: center;
+            font: bold 1em arial;
+            color: white;
+            background-color: blue;
+            width: 130px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Olá, esta é a prática do ex005 da aula 09</h1>
+    <p name="1p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem fugiat laboriosam iure reprehenderit, odio facilis velit eum, cum similique molestiae aspernatur natus? Blanditiis ullam adipisci voluptates soluta voluptatibus aut deleniti?
+    </p>
+    <p class="2p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos qui odit explicabo totam modi. Eaque deleniti modi inventore incidunt quaerat. Eveniet alias minima blanditiis perferendis amet iure quam asperiores earum.
+    </p>
+    <div id="botao" class="botao">
+        Clique em mim
+    </div>
+
+    <script>
+        /*
+        POR TAG
+
+        var d = document.getElementsByTagName('p') [1]
+        d.style.backgroundColor = 'red'
+        d.style.borderRadius = '10px'
+        d.style.padding = '10px'
+        */
+
+        /*
+        POR ID
+
+        var d = document.getElementById('titulo')
+        d.style.fontSize = '100px'
+        */
+
+        /*
+        POR NAME
+
+        var d = document.getElementsByName('1p')[0]
+        d.style.background = 'grey'
+        */
+        
+        /*
+        POR CLASS
+
+        var d = document.getElementsByClassName('2p')[0]
+        d.style.color = 'red'
+        d.style.background = 'black'
+        d.style.fontWeight = 'bold'
+        */
+
+        /*
+        POR QUERY SELECTOR (SELETOR)
+        (SELETOR QUASE IGUAL O DAS CSS)
+
+        var d = document.querySelector('div#botao')
+                                      ('div.botao')
+                                      ('div')  
+        d.style.background = 'red'
+        d.style.color = 'black'
+        */
+        
+    </script>
+</body>
+</html>
