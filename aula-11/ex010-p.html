@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTA DA ESCOLA</title>
+</head>
+<body>
+    <h1>Sistema de Aprovados e Reprovados</h1>
+    Sua nota: <input type="number" name="txtnota" id="txtnota">
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function calcular(){
+            var txtn = document.getElementById('txtnota')
+            var res = document.getElementById ('res')
+            var nota = Number(txtn.value)
+            res.innerHTML = `Sua nota foi de <strong>${nota}</strong> pontos`
+            if (nota >= 6){
+                res.innerHTML += ` e você foi aprovado :D`
+            } else{
+                res.innerHTML += ` e você foi reprovado :d`
+            }
+            res.innerHTML += `<p>Obrigado por utilizar nosso site!</p>` 
+            
+        }
+    </script>
+</body>
+</html>
